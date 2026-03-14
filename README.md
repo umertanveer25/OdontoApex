@@ -19,10 +19,12 @@ Integrates dental geometry with mechanical failure prediction. By calculating th
 - **Phase_2_Enrichment/**: Synthetic mask generation for dataset enrichment.
 - **Phase_3_Benchmarking/**: Comparative metrics (SAC vs Baseline).
 - **Phase_4_Restoration/**: [Generative AI] Radiographic inpainting for "Healthy Twin" simulation.
-- **Phase_5_Prognosis/**: [Predictive AI] Biomechanical stress mapping and failure prediction.
+- **Phase_5_Prognosis/**: [Predictive AI] Biomechanical stress mapping.
+- **Phase_6_BioSimulation/**: [Regenerative AI] Biological repair potential.
+- **Phase_7_Molecular/**: [Precision Medicine] Molecular diagnostic (tRNA/DNA) of tooth failure.
 
 ## 🚀 How to Run
-To run the entire pipeline end-to-end, execute the master orchestrator from the root directory:
+To run the entire 7-phase pipeline end-to-end, execute the master orchestrator from the root directory:
 ```bash
 python master_pipeline.py
 ```
