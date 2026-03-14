@@ -1,56 +1,38 @@
 # OdontoApex: High-Precision Dental AI & Molecular Regenerative Platform
 
-![OdontoApex Banner](https://img.shields.io/badge/Dental%20AI-9--Phase-blueviolet?style=for-the-badge&logo=pytorch)
+![OdontoApex Banner](https://img.shields.io/badge/Dental%20AI-10--Phase-blueviolet?style=for-the-badge&logo=pytorch)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-**OdontoApex** is a world-class, end-to-end research platform that bridges the gap between **Radiographic Imaging**, **Biomechanical Engineering**, and **Molecular Precision Medicine**. Developed as a 9-phase clinical architecture, it handles everything from basic tooth segmentation to patient-specific drug synthesis for biological tooth regrowth.
+**OdontoApex** is a world-class, end-to-end research platform that bridges the gap between **Radiographic Imaging**, **Biomechanical Engineering**, and **Molecular Precision Medicine**. Structured as a **10-phase clinical architecture**, it handles everything from basic tooth segmentation to patient-specific drug synthesis and long-term recovery simulation.
 
 ---
 
-## 🏛️ The 9-Phase Research Pipeline
-
-The platform is structured into nine distinct, interconnected phases, moving from raw pixels to molecular cures.
+## 🏛️ The 10-Phase Research Pipeline
 
 ### Phase 1-3: The AI Foundation
-| Phase | Title | Objective | Technical Outcome |
-| :--- | :--- | :--- | :--- |
-| **01** | **Segmentation** | Individualization of dental units. | 91% Accuracy on OPG Units. |
-| **02** | **Enrichment** | Synthetic mask generation. | 1.4K+ enriched training samples. |
-| **03** | **Benchmarking** | SAC vs. Baseline comparison. | 16% Recall boost for pathologies. |
+- **Phase 01: Segmentation**: AI-driven individualization of dental units (91% Accuracy).
+- **Phase 02: Enrichment**: Synthetic mask generation for 1.4K+ enriched training samples.
+- **Phase 03: Benchmarking**: SAC Framework vs. Baseline comparison (16% Recall boost).
 
-### Phase 4: Generative Restoration (Inpainting)
-The AI simulates "perfect" dental anatomy by "healing" pathologic voids in X-rays using learned anatomical priors from Archives 4 & 6.
-![Phase 4 Restoration](assets/phase4_restoration.png)
+### Phase 4-5: Predictive Architecture
+- **Phase 04: Generative Restoration**: AI-simulated "Perfect" dental anatomy via Radiographic Inpainting.
+- **Phase 05: Predictive Prognosis**: Biomechanical Stress Mapping to identify future fracture risks.
 
-### Phase 5: Predictive Biomechanical Prognosis
-By analyzing inter-proximal geometry and tooth angulation, the model generates a **Future Risk Heatmap**, highlighting fractures before they become clinically visible.
-![Phase 5 Prognosis](assets/phase5_prognosis.png)
+### Phase 6-7: Molecular Tier
+- **Phase 06: Regenerative Oracle**: Texture-based analysis for **Biological Repair Potential (77.57%)**.
+- **Phase 07: Molecular Diagnostic**: Identification of "Broken" tRNA/DNA molecular structures at the atomic level.
 
-### Phase 6: The Regenerative Oracle
-Moving beyond surgery, the AI analyzes radiographic texture to calculate a **Bio-Potential Score**, predicting if a tooth can be repaired biologically (re-mineralization).
-*   **Result**: 77.57% Repair Potential detected for Sample #1.
-
-### Phase 7: The Molecular Diagnostic
-The "Final Seal." The platform identifies the specific "Broken" molecular structure (tRNA-modifying enzymes) causing the radiographic decay.
-![Phase 7 Molecular](assets/phase7_molecular.png)
-
-### Phase 8: Pharmo-Dynamic Matchmaker
-Using **In Silico Virtual Screening**, the AI matches the broken molecular target with a lead drug compound from a library of 1M+ molecules.
-![Phase 8 Docking](assets/phase8_docking.png)
-
-### Phase 9: Personalized Synthesis
-The ultimate masterpiece. The AI designs a **Bespoke Drug** specifically for the patient's unique biological signature to accelerate 2.4x faster regrowth.
-![Phase 9 Synthesis](assets/phase9_synthesis.png)
+### Phase 8-10: Precision Cure & Proof
+- **Phase 08: Pharmo-Dynamic Matchmaker**: In Silico Virtual Screening of 1M+ compounds for lead discovery.
+- **Phase 09: Personalized Synthesis**: AI design of bespoke drug molecules tailored to patient-specific tRNA breaks.
+- **Phase 10: Regenerative Outcome Simulator**: 6-month post-op clinical projection showing full biological recovery.
 
 ---
 
 ## 🛠️ Technical Architecture
 
-### Core Framework
-The [Core/dental_ai_framework.py](Core/dental_ai_framework.py) houses the centralized U-Net architecture and the **SAC (Selective Anatomical Cascade)** engine.
-
 ### Master Orchestrator
-Execute the entire 9-phase research lifecycle with a single command:
+Execute the entire 10-phase research lifecycle with a single command:
 ```bash
 python master_pipeline.py
 ```
@@ -67,20 +49,14 @@ python master_pipeline.py
 ├── Phase_7_Molecular/    # Molecular Diagnostic Engine
 ├── Phase_8_DrugDiscovery/# Virtual Screening Engine
 ├── Phase_9_PersonalizedSynthesis/ # Bespoke Drug Synthesizer
+├── Phase_10_Outcome/     # Recovery Simulator
 └── assets/             # Research Visualizations
 ```
 
 ---
 
-## 🚀 Impact & Clinical Value
-- **Minimally Invasive**: Prioritizes biological repair over mechanical drilling.
-- **Predictive Healthcare**: Stops fractures before they happen.
-- **Precision Medicine**: Tailors treatment to the patient's tRNA/DNA signature.
-
----
-
 ## 📜 License
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**.
 
 ---
 Developed by **Umer Tanveer** | *Advancing the frontiers of Dental AI.*

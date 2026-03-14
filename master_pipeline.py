@@ -30,7 +30,8 @@ def main():
         ("Phase_6_BioSimulation/enzyme_repair_simulator.py", "Phase_6_BioSimulation"),
         ("Phase_7_Molecular/molecular_diagnostic.py", "Phase_7_Molecular"),
         ("Phase_8_DrugDiscovery/drug_discovery_engine.py", "Phase_8_DrugDiscovery"),
-        ("Phase_9_PersonalizedSynthesis/custom_drug_synthesizer.py", "Phase_9_PersonalizedSynthesis")
+        ("Phase_9_PersonalizedSynthesis/custom_drug_synthesizer.py", "Phase_9_PersonalizedSynthesis"),
+        ("Phase_10_Outcome/outcome_simulator.py", "Phase_10_Outcome")
     ]
     
     for script_rel_path, phase_dir in phases:
