@@ -1,0 +1,17 @@
+[
+    {
+        "name": "OdontoDox-A1",
+        "binding_affinity": -9.4,
+        "status": "LEAD"
+    },
+    {
+        "name": "MolarFix-7",
+        "binding_affinity": -8.2,
+        "status": "SECONDARY"
+    },
+    {
+        "name": "DentoLigand",
+        "binding_affinity": -7.1,
+        "status": "TERTIARY"
+    }
+]

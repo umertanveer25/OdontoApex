@@ -21,10 +21,12 @@ Integrates dental geometry with mechanical failure prediction. By calculating th
 - **Phase_4_Restoration/**: [Generative AI] Radiographic inpainting for "Healthy Twin" simulation.
 - **Phase_5_Prognosis/**: [Predictive AI] Biomechanical stress mapping.
 - **Phase_6_BioSimulation/**: [Regenerative AI] Biological repair potential.
-- **Phase_7_Molecular/**: [Precision Medicine] Molecular diagnostic (tRNA/DNA) of tooth failure.
+- **Phase_7_Molecular/**: [Precision Medicine] Molecular diagnostic (tRNA/DNA).
+- **Phase_8_DrugDiscovery/**: [Pharma AI] In Silico Drug Discovery.
+- **Phase_9_PersonalizedSynthesis/**: [Hyper-Precision] Patient-specific bespoke drug design.
 
 ## 🚀 How to Run
-To run the entire 7-phase pipeline end-to-end, execute the master orchestrator from the root directory:
+To run the entire 9-phase pipeline end-to-end, execute the master orchestrator from the root directory:
 ```bash
 python master_pipeline.py
 ```
