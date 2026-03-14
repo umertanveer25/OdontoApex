@@ -89,9 +89,6 @@ Final validation of the 10-phase pipeline. The AI projects the **temporal regrow
 | **Mechanical Integrity**| **0.96 Score** | Final tooth strength matches the natural, pre-pathology state. |
 | **Safety Index** | **0.99** | Zero predicted off-target molecular interactions. |
 
-![Phase 10 Outcome](assets/phase9_synthesis.png)
-*Visual Proof: Projected biological integration after 180 days.*
-
 ---
 
 ## 🛠️ Execution & Deployment
