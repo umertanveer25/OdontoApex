@@ -37,41 +37,43 @@
 
         <section id="analysis-section" class="hidden">
             <div class="analysis-grid">
-                <!-- Tier I: Radiomics -->
+                <!-- Tier I: Radiomics (Phases 0-3) -->
                 <div class="card glass">
                     <div class="card-header">
                         <span class="tier">TIER I: PHASES 0-3</span>
-                        <h3>Radiomic Analysis</h3>
+                        <h3>Radiomic Heatmap</h3>
+                        <span class="accuracy-tag" id="acc-tier1">0%</span>
                     </div>
-                    <canvas id="xray-canvas"></canvas>
-                    <div class="metrics-list" id="radiomic-metrics">
-                        <!-- Populated by JS -->
+                    <div class="viz-container">
+                        <canvas id="xray-canvas"></canvas>
+                        <canvas id="heatmap-tier1" class="overlay-canvas"></canvas>
                     </div>
+                    <div class="metrics-list" id="radiomic-metrics"></div>
                 </div>
 
-                <!-- Tier II: Biomechanics -->
+                <!-- Tier II: Biomechanics (Phases 4-5) -->
                 <div class="card glass">
                     <div class="card-header">
                         <span class="tier">TIER II: PHASES 4-5</span>
-                        <h3>Biomechanics</h3>
+                        <h3>Stress Heatmap</h3>
+                        <span class="accuracy-tag" id="acc-tier2">0%</span>
                     </div>
-                    <div class="prognosis-box">
-                        <div class="stress-meter">
-                            <div class="meter-bar" id="stress-bar"></div>
-                        </div>
-                        <p id="stress-status">Calculating Tensors...</p>
+                    <div class="viz-container">
+                        <canvas id="heatmap-tier2"></canvas>
                     </div>
-                    <div class="biomech-viz" id="biomech-viz"></div>
+                    <div class="metrics-list" id="biomech-metrics"></div>
                 </div>
 
-                <!-- Tier III: Molecular -->
+                <!-- Tier III: Molecular (Phases 6-9) -->
                 <div class="card glass highlighted">
                     <div class="card-header">
                         <span class="tier">TIER III: PHASES 6-9</span>
-                        <h3>Molecular Synthesis</h3>
+                        <h3>Synthesis Analysis</h3>
+                        <span class="accuracy-tag" id="acc-tier3">0%</span>
                     </div>
-                    <div class="molecule-viewer">
+                    <div class="viz-container">
                         <canvas id="molecule-canvas"></canvas>
+                        <canvas id="heatmap-tier3" class="overlay-canvas"></canvas>
                     </div>
                     <div class="drug-info">
                         <h4 id="drug-name">Synthesis Pending...</h4>
@@ -79,14 +81,19 @@
                     </div>
                 </div>
 
-                <!-- Tier IV: Temporal -->
+                <!-- Tier IV: Temporal (Phase 10) -->
                 <div class="card glass">
                     <div class="card-header">
                         <span class="tier">TIER IV: PHASE 10</span>
-                        <h3>Regrowth Simulation</h3>
+                        <h3>Regrowth Projection</h3>
+                        <span class="accuracy-tag" id="acc-tier4">0%</span>
                     </div>
                     <div class="chart-container">
                         <canvas id="regrowth-chart"></canvas>
+                    </div>
+                    <div class="viz-container small mt-1">
+                        <p class="small-label">REPAIR HEATMAP (PROJECTED)</p>
+                        <canvas id="heatmap-tier4"></canvas>
                     </div>
                 </div>
             </div>

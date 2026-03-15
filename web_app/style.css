@@ -164,7 +164,37 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.accuracy-tag {
+    background: rgba(79, 195, 247, 0.1);
+    color: var(--primary);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.viz-container {
+    position: relative;
+    width: 100%;
+    background: #000;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.viz-container.small { height: 100px; }
+.mt-1 { margin-top: 1rem; }
+.small-label { font-size: 0.6rem; color: #8b949e; margin-bottom: 0.3rem; }
+
+.overlay-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    pointer-events: none;
 }
 
 .tier {
