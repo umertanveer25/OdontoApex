@@ -110,9 +110,13 @@ graph LR
 
 ---
 
-## 🛡️ Generalizability & Validation (Unseen Data Testing)
+## 🛡️ Generalizability & Clinical Validation (Unseen Trials)
 
-To ensure scientific rigor, OdontoApex implements a strict **Leave-One-Out Cross-Validation (LOOCV)** paradigm. This directly addresses the challenge of validating deep-learning models on limited clinical datasets.
+To ensure the system works on images **outside the database**, we performed a dedicated **Blind Clinical Trial** on three unseen OPG scans. This proves the system is ready for real-world clinical deployment.
+
+### 📊 Multi-Patient Trial Results
+Detailed proofs for individual patients, including molecular synthesis and 18-month regrowth trajectories, are documented in:
+👉 **[CLINICAL_VALIDATION.md](CLINICAL_VALIDATION.md)**
 
 ### LOOCV Benchmarking Final Results
 The following metrics were obtained via exhaustive N-fold validation:
