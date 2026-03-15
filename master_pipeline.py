@@ -22,6 +22,7 @@ def main():
     print("="*60)
     
     phases = [
+        ("Phase_0_GenerativeAugment/bidirectional_translator.py", "Phase_0_GenerativeAugment"),
         ("Phase_1_Segmentation/phase1_training.py", "Phase_1_Segmentation"),
         ("Phase_2_Enrichment/phase2_inference.py", "Phase_2_Enrichment"),
         ("Phase_3_Benchmarking/phase3_benchmark.py", "Phase_3_Benchmarking"),

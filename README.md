@@ -10,7 +10,24 @@
 
 ## 🏛️ The 10-Phase Clinical Architecture
 
-OdontoApex follows a scientifically structured "End-to-End" workflow: from initial pixel segmentation to bespoke molecular drug synthesis.
+OdontoApex follows a scientifically structured "End-to-End" workflow: from generative data foundation to bespoke molecular drug synthesis. The platform utilizes a **Hierarchical Multi-Level Cohort (HMLC)** strategy, filtering data from a population-level reservoir to individualized digital twins.
+
+### 🏟️ Dataset & Cohort Breakdown
+| Level | Cohort Type | Sample Count | Application |
+| :--- | :--- | :--- | :--- |
+| **0** | **Generative Foundation**| **Hybrid/Synthetic** | Bidirectional OPG-Mask Synthesis |
+| **I** | **Population Reservoir** | **77,740 Slices** | Unsupervised Feature Robustness |
+| **II** | **Clinical Foundation** | **598 Patients** | Supervised Segmentation (U-Net) |
+| **III** | **Digital Twin Suite** | **232 Patients** | Molecular Simulation & Synthesis |
+
+---
+
+## 🏛️ The 11-Step Clinical Odyssey (Phase 0 + 10)
+
+### 🧬 Generative Foundation (Phase 0)
+| Phase | Title | Methodology | Validated Result |
+| :--- | :--- | :--- | :--- |
+| **00** | **Generative Foundation** | Bidirectional Cycle-GAN Translation | **High Anatomical Fidelity** |
 
 ### 🔬 Core Foundations (Phases 1-3)
 | Phase | Title | Methodology | Validated Result |
