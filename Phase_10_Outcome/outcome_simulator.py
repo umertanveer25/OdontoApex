@@ -32,11 +32,21 @@ def simulate_regrowth_outcome(patient_id, compound_code):
     
     return outcome
 
+# Bridge to Core framework
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from Core.dental_ai_framework import get_split_images
+
 def main():
     # Mocking input from Phase 9
     p_id = "USER_UMER_01"
     c_code = "APEX-SYNTH-998"
     
+    test_imgs = get_split_images("test")
+    if test_imgs is not None and len(test_imgs) > 0:
+        p_id = f"PATIENT_{test_imgs[0].split('.')[0]}"
+        print(f"LOOCV Active: Simulating 6-month outcome for {p_id}")
+
     final_proof = simulate_regrowth_outcome(p_id, c_code)
     
     root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

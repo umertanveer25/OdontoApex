@@ -5,7 +5,7 @@ from torchvision import transforms
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from Core.dental_ai_framework import DentalUNet
+from Core.dental_ai_framework import DentalUNet, get_split_images
 
 def run_phase_2(data_dir, model_path):
     print("--- Phase 2: Generating Synthetic Masks for OPG Enrichment ---")
@@ -30,8 +30,14 @@ def run_phase_2(data_dir, model_path):
         transforms.ToTensor(),
     ])
     
-    images = [f for f in os.listdir(img_dir) if f.endswith('.jpg')]
-    print(f"Enriching {len(images)} images...")
+    valid_imgs = get_split_images("train")
+    if valid_imgs is not None:
+        valid_basenames = [os.path.splitext(f)[0] for f in valid_imgs]
+        images = [f for f in os.listdir(img_dir) if f.endswith('.jpg') and os.path.splitext(f)[0] in valid_basenames]
+        print(f"LOOCV Active: Enriching {len(images)} train images...")
+    else:
+        images = [f for f in os.listdir(img_dir) if f.endswith('.jpg')]
+        print(f"Enriching {len(images)} images...")
     
     with torch.no_grad():
         for img_name in images[:50]: # Process a subset for the prototype

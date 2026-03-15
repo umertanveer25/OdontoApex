@@ -4,10 +4,14 @@ import torch.nn as nn
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from Core.dental_ai_framework import DentalClassifier
+from Core.dental_ai_framework import DentalClassifier, get_split_images
 
 def run_phase_3_benchmark():
     print("--- Phase 3: Integrated Benchmark vs Baseline ---")
+    
+    test_imgs = get_split_images("test")
+    if test_imgs is not None and len(test_imgs) > 0:
+        print(f"LOOCV Active: Computing benchmark for isolated test sample: {test_imgs[0]}")
     
     # 1. Baseline Model (ResNet/CNN on global OPG)
     baseline_model = DentalClassifier(n_classes=2)

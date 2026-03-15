@@ -1,6 +1,7 @@
 import os
 import subprocess
 import sys
+import argparse
 
 def run_phase(script_path, cwd):
     print(f"\n>>> Executing: {os.path.basename(script_path)}...")
@@ -15,10 +16,21 @@ def run_phase(script_path, cwd):
         print(f"Failed to execute {script_path}: {e}")
 
 def main():
+    parser = argparse.ArgumentParser(description="ODONTOAPEX: Master Orchestrator")
+    parser.add_argument("--loocv", action="store_true", help="Run Leave-One-Out Cross-Validation protocol")
+    parser.add_argument("--folds", type=int, default=5, help="Number of folds for LOOCV")
+    args = parser.parse_args()
+
     root_dir = os.path.dirname(os.path.abspath(__file__))
     
+    if args.loocv:
+        loocv_script = os.path.join(root_dir, "loocv_validation.py")
+        subprocess.run([sys.executable, loocv_script, "--max_folds", str(args.folds)], cwd=root_dir)
+        return
+
     print("="*60)
-    print("DENTAL AI RESEARCH PIPELINE: MASTER ORCHESTRATOR")
+    print("ODONTOAPEX: DEEP-TECH CLINICAL DENTAL AI PIPELINE")
+    print("STATUS: RESEARCH MODE (FIXED PIPELINE)")
     print("="*60)
     
     phases = [
@@ -42,6 +54,7 @@ def main():
 
     print("\n" + "="*60)
     print("ALL PHASES COMPLETE. PROJECT REPOSITORY IS READY.")
+    print("TIP: Run 'python master_pipeline.py --loocv' for Unseen Data Generalizability tests.")
     print("="*60)
 
 if __name__ == "__main__":

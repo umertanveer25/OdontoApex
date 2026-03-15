@@ -5,14 +5,18 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader
 from PIL import Image
 import numpy as np
+import json
 
 class DentalSegmentationDataset(Dataset):
     """Dataset for Phase I: Tooth Segmentation"""
-    def __init__(self, img_dir, mask_dir, transform=None):
+    def __init__(self, img_dir, mask_dir, transform=None, valid_images=None):
         self.img_dir = img_dir
         self.mask_dir = mask_dir
         self.transform = transform
-        self.images = [f for f in os.listdir(img_dir) if f.endswith('.png')]
+        if valid_images is not None:
+            self.images = [f for f in valid_images if f.endswith('.png')]
+        else:
+            self.images = [f for f in os.listdir(img_dir) if f.endswith('.png')]
 
     def __len__(self):
         return len(self.images)
@@ -38,11 +42,14 @@ class DentalSegmentationDataset(Dataset):
 
 class DentalClassificationDataset(Dataset):
     """Dataset for Phase II: Integrated Classification"""
-    def __init__(self, img_dir, label_file, transform=None):
+    def __init__(self, img_dir, label_file, transform=None, valid_images=None):
         self.img_dir = img_dir
         self.transform = transform
         # In a real scenario, we'd parse labels from a CSV or folder names
-        self.images = [f for f in os.listdir(img_dir) if f.endswith('.jpg')]
+        if valid_images is not None:
+            self.images = [f for f in valid_images if f.endswith('.jpg') or f.endswith('.png')]
+        else:
+            self.images = [f for f in os.listdir(img_dir) if f.endswith('.jpg') or f.endswith('.png')]
 
     def __len__(self):
         return len(self.images)
@@ -99,6 +106,18 @@ class SACPipeline:
         # 3. Classify patches
         logits = self.classifier(x)
         return logits
+
+def get_split_images(split_type="train"):
+    """
+    Helper to get the current fold's train or test images from the split_state.json.
+    split_type: 'train' or 'test'
+    """
+    split_file = os.path.join(os.path.dirname(__file__), "split_state.json")
+    if os.path.exists(split_file):
+        with open(split_file, "r") as f:
+            data = json.load(f)
+        return data.get(f"{split_type}_images", None)
+    return None
 
 if __name__ == "__main__":
     print("Dental AI Framework initialized.")

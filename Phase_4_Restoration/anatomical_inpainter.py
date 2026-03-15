@@ -5,6 +5,8 @@ import numpy as np
 from PIL import Image, ImageDraw
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from Core.dental_ai_framework import get_split_images
+
 def simulate_restoration(img_path, mask_path, output_path):
     """
     Simulates radiographic inpainting.
@@ -54,8 +56,13 @@ def main():
     out_dir = os.path.join(base_dir, "restorations")
     os.makedirs(out_dir, exist_ok=True)
 
-    # Pick a sample for restoration demo
-    sample = "1.jpg"
+    test_imgs = get_split_images("test")
+    if test_imgs is not None and len(test_imgs) > 0:
+        sample = test_imgs[0].replace('.png', '.jpg')
+        print(f"LOOCV Active: Generating restoration for test sample {sample}")
+    else:
+        sample = "1.jpg"
+
     img_path = os.path.join(img_dir, sample)
     mask_path = os.path.join(mask_dir, sample.replace(".jpg", ".png"))
     

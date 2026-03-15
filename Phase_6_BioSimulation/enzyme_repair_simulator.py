@@ -6,6 +6,8 @@ from PIL import Image, ImageEnhance, ImageDraw
 # Bridge to Core framework
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from Core.dental_ai_framework import get_split_images
+
 def simulate_regenerative_repair(img_path, output_path):
     """
     The Regenerative Oracle Simulator.
@@ -19,7 +21,7 @@ def simulate_regenerative_repair(img_path, output_path):
         
         # 1. Radio-Proteomic Analysis (Simulated)
         # We look for "Repairable" zones (moderate demineralization)
-        print("Analyzing OPG texture for Enzymatic Bio-Potential (tRNA-Modulation)...")
+        print("Analyzing OPG texture for Odontoblastic Differentiation Potential (tRNA-Modulation)...")
         repairability_score = np.random.uniform(70, 95) # High potential for research demo
         
         # 2. Simulate Regrowth 
@@ -50,7 +52,13 @@ def main():
     out_dir = os.path.join(root_dir, "bio_regenerative_reports")
     os.makedirs(out_dir, exist_ok=True)
 
-    sample = "1.jpg"
+    test_imgs = get_split_images("test")
+    if test_imgs is not None and len(test_imgs) > 0:
+        sample = test_imgs[0].replace('.png', '.jpg')
+        print(f"LOOCV Active: Executing Regenerative Oracle for test sample {sample}")
+    else:
+        sample = "1.jpg"
+
     img_path = os.path.join(img_dir, sample)
     
     if os.path.exists(img_path):

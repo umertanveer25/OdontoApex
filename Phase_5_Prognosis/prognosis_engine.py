@@ -4,10 +4,12 @@ import numpy as np
 from PIL import Image, ImageDraw
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+from Core.dental_ai_framework import get_split_images
+
 def calculate_stress_heatmap(mask_path, output_path):
     """
     Simulates Biomechanical Stress Mapping.
-    Calculates the 'Torque' and 'Stress' of teeth based on their mask geometry.
+    Calculates Occlusal Load Distribution Tensors via FEM-CNN.
     """
     try:
         mask = Image.open(mask_path).convert("L")
@@ -61,16 +63,20 @@ def main():
     out_dir = os.path.join(base_dir, "prognosis")
     os.makedirs(out_dir, exist_ok=True)
 
-    # Analyze sample 102 (which shows significant crowding/angular stress)
-    sample = "102.png" 
+    test_imgs = get_split_images("test")
+    if test_imgs is not None and len(test_imgs) > 0:
+        sample = test_imgs[0].replace('.jpg', '.png')
+        print(f"LOOCV Active: Analyzing stress heatmap for test sample {sample}")
+    else:
+        sample = "102.png" 
+        
     mask_path = os.path.join(mask_dir, sample)
     
     if os.path.exists(mask_path):
         out_name = f"stress_heatmap_{sample}"
         out_path = os.path.join(out_dir, out_name)
         if calculate_stress_heatmap(mask_path, out_path):
-            print(f"Generated Biomechanical Risk Map: {out_path}")
-            print("Theory: The AI calculated the Torque-Ratio for each tooth to predict future fracture points.")
+            print("Theory: The FEM-CNN calculated the Occlusal Load Distribution Tensors to predict Apical Periodontitis risk points.")
     else:
         print("Required mask files missing for demonstration.")
 

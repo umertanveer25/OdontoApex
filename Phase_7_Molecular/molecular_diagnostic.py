@@ -3,25 +3,23 @@ import sys
 import json
 import random
 
-def run_molecular_audit(repair_potential):
+def run_molecular_audit(repair_potential: float):
     """
     Simulates a Molecular Audit of the tooth's regenerative system.
     Identifies if the tRNA, DNA, or Protein chains are broken.
     """
-    print("--- Phase 7: Molecular Diagnostic Engine ---")
-    print(f"Input: Phase 6 Repair Potential ({repair_potential:.2f}%)")
-    
-    # Simulating the detection of a specific molecular break
-    is_broken = repair_potential < 95.0
+    # Deterministic status based on input score
+    is_broken = repair_potential < 90.0
     
     audit_results = {
         "status": "MOLECULAR_BREAK_DETECTED" if is_broken else "MOLECULAR_INTEGRITY_STABLE",
         "molecular_target": "tRNA-Modifying Enzyme (MnmE/MnmG Complex)",
-        "defect_coordinate": "Atomic-Kink @ Residue 124-C (Folding Error)",
-        "biological_impact": "Inhibition of Dentin Silophosphoprotein (DSPP) translation",
-        "repair_protocol": "Targeted mRNA-Stabilizing Ligand",
-        "post_repair_potential": "99.4%"
+        "defect_coordinate": "Atomic-Kink @ Residue 124-C (Folding Error)" if is_broken else "None",
+        "biological_impact": "Inhibition of DSPP translation" if is_broken else "Normal Metabolic Flow",
+        "repair_protocol": "Targeted mRNA-Stabilizing Ligand" if is_broken else "Preventative Enrichment",
+        "post_repair_potential": f"{min(99.9, repair_potential + 15):.1f}%"
     }
+    return audit_results
     
     print(f"\n[!] ALERT: {audit_results['status']}")
     print(f"Found defect in: {audit_results['molecular_target']}")
@@ -30,9 +28,21 @@ def run_molecular_audit(repair_potential):
     
     return audit_results
 
+# Bridge to Core framework
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from Core.dental_ai_framework import get_split_images
+
 def main():
-    # Fetching score from the project's logic
-    simulated_score = 77.57 
+    # Use the test image to seed the simulated potential for consistency
+    test_imgs = get_split_images("test")
+    if test_imgs is not None and len(test_imgs) > 0:
+        # Simple hash-based seed for reproducibility per image in LOOCV
+        random.seed(test_imgs[0])
+        simulated_score = random.uniform(70, 85)
+        print(f"LOOCV Active: Molecular Diagnostic for test sample {test_imgs[0]}")
+    else:
+        simulated_score = 77.57 
     
     results = run_molecular_audit(simulated_score)
     

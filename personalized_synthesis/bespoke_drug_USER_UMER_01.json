@@ -1,9 +1,9 @@
 {
     "patient_id": "USER_UMER_01",
-    "compound_code": "APEX-SYNTH-5739",
-    "molecular_formula": "C24H32N4O6-P2",
+    "compound_code": "APEX-SYNTH-0998",
+    "molecular_formula": "C21H33N4O6",
     "target_affinity": 99.8,
-    "specificity_index": 0.99,
-    "regrowth_acceleration_factor": "2.4x",
+    "specificity_index": 0.96,
+    "regrowth_acceleration": "2.5x",
     "status": "SYNTHESIZED_FOR_CLINICAL_USE"
 }

@@ -7,21 +7,27 @@ from torchvision import transforms
 import sys
 import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from Core.dental_ai_framework import DentalSegmentationDataset, DentalUNet
+from Core.dental_ai_framework import DentalSegmentationDataset, DentalUNet, get_split_images
 
 def train_phase_1(data_dir, epochs=10, batch_size=4, lr=0.001):
-    print("--- Phase 1: Training Tooth Segmentation Engine ---")
+    print("--- Phase 1: Training PDL Boundary Delineation Engine ---")
+    print("Strategy: Enamel-Dentin Junction Gradient Mapping via Attention U-Net")
     
     img_dir = os.path.join(data_dir, "images")
     mask_dir = os.path.join(data_dir, "masks")
     
+    # Get LOOCV train split
+    valid_imgs = get_split_images("train")
+    if valid_imgs is not None:
+        print(f"LOOCV Active: Training on {len(valid_imgs)} images.")
+
     # Preprocessing
     transform = transforms.Compose([
         transforms.Resize((256, 256)),
         transforms.ToTensor(),
     ])
     
-    dataset = DentalSegmentationDataset(img_dir, mask_dir, transform=transform)
+    dataset = DentalSegmentationDataset(img_dir, mask_dir, transform=transform, valid_images=valid_imgs)
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True)
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
