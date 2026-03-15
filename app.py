@@ -167,8 +167,11 @@ def phase11_3d_oracle(img: Image.Image, seed: int) -> Image.Image:
 # ------------------------------------------------------------------ #
 
 def run_odontoapex_pipeline(input_image):
+    # We keep a mutable state dict so we can always yield all 14 values
+    state = {i: None for i in range(11)}
+
     if input_image is None:
-        yield "Upload an OPG X-ray to begin.", *([None]*11), ""
+        yield ("Upload an OPG X-ray to begin.", *[None]*11, "")
         return
 
     img = Image.open(input_image).convert("RGB").resize((512, 512))
@@ -186,73 +189,79 @@ def run_odontoapex_pipeline(input_image):
     brp_score  = min(95, 68 + (brightness / 10))
     compound_id = f"APEX-SYNTH-{seed % 999:03d}"
 
+    def emit(log, metrics=""):
+        return (log,
+                state[0], state[1], state[2], state[3], state[4],
+                state[5], state[6], state[7], state[8], state[9],
+                state[10], metrics)
+
     log = ""
 
     # === PHASE 0 ===
     time.sleep(0.3)
     log += "[Phase 0] Dento-Alveolar Voxel Synthesis (CycleGAN)...\n"
     p0 = phase0_generate_mask(img, seed)
-    yield log, p0, *([None]*10), ""
+    yield log, p0, *([None]*11), ""
 
     # === PHASE 1 ===
     time.sleep(0.3)
     log += f"[Phase 1] PDL Boundary Delineation → Dice: {pdl_dice:.1f}%\n"
     p1 = phase1_segmentation(img, seed)
-    yield log, p0, p1, *([None]*9), ""
+    yield log, p0, p1, *([None]*10), ""
 
     # === PHASE 2 ===
     time.sleep(0.3)
     log += "[Phase 2] Synthetic Label Propagation (Mask Enrichment)...\n"
     p2 = phase2_enrichment(img, seed)
-    yield log, p0, p1, p2, *([None]*8), ""
+    yield log, p0, p1, p2, *([None]*9), ""
 
     # === PHASE 3 ===
     time.sleep(0.3)
     log += f"[Phase 3] SAC vs ResNet-50 Benchmark → +{recall_gain}% Recall\n"
     p3 = phase3_benchmark(img, seed)
-    yield log, p0, p1, p2, p3, *([None]*7), ""
+    yield log, p0, p1, p2, p3, *([None]*8), ""
 
     # === PHASE 4 ===
     time.sleep(0.3)
     log += "[Phase 4] Radiographic Inpainting (Healthy Digital Twin)...\n"
     p4 = phase4_restoration(img, seed)
-    yield log, p0, p1, p2, p3, p4, *([None]*6), ""
+    yield log, p0, p1, p2, p3, p4, *([None]*7), ""
 
     # === PHASE 5 ===
     time.sleep(0.3)
     log += "[Phase 5] FEM-CNN Occlusal Load Tensor Map...\n"
     p5 = phase5_prognosis(img, seed)
-    yield log, p0, p1, p2, p3, p4, p5, *([None]*5), ""
+    yield log, p0, p1, p2, p3, p4, p5, *([None]*6), ""
 
     # === PHASE 6 ===
     time.sleep(0.3)
     log += f"[Phase 6] Odontoblastic Differentiation Score: {brp_score:.1f}% BRP\n"
     p6 = phase6_oracle(img, seed)
-    yield log, p0, p1, p2, p3, p4, p5, p6, *([None]*4), ""
+    yield log, p0, p1, p2, p3, p4, p5, p6, *([None]*5), ""
 
     # === PHASE 7 ===
     time.sleep(0.3)
     log += "[Phase 7] tRNA Atomic-Kink Identification @ Residue 124-C\n"
     p7 = phase7_molecular(img, seed)
-    yield log, p0, p1, p2, p3, p4, p5, p6, p7, *([None]*3), ""
+    yield log, p0, p1, p2, p3, p4, p5, p6, p7, *([None]*4), ""
 
     # === PHASE 8 ===
     time.sleep(0.3)
     log += f"[Phase 8] Virtual Screening: OdontoDox-A1 | ΔG={affinity:.2f} kcal/mol\n"
     p8 = phase8_docking(img, seed, affinity)
-    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, *([None]*2), ""
+    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, *([None]*3), ""
 
     # === PHASE 9 ===
     time.sleep(0.3)
     log += f"[Phase 9] GAN Bespoke Synthesis: {compound_id} | Affinity: {affinity_pct:.1f}%\n"
     p9 = phase9_synthesis(img, seed, affinity_pct)
-    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, None, ""
+    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, None, None, ""
 
     # === PHASE 10 ===
     time.sleep(0.3)
     log += f"[Phase 10] 180-Day Regrowth Projection: {regrowth:.1f}%\n"
     p10 = phase10_outcome(img, seed, regrowth)
-    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, ""
+    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, None, ""
 
     # === PHASE 11 ===
     time.sleep(0.5)
@@ -273,7 +282,7 @@ def run_odontoapex_pipeline(input_image):
 }}"""
 
     log += "\n[██████████] 100% — ALL 11 PHASES COMPLETE.\n"
-    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, metrics
+    yield log, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, metrics
 
 
 # ------------------------------------------------------------------ #
