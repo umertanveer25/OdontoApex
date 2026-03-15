@@ -1,0 +1,13 @@
+{
+    "Patient_ID": "Patient_A",
+    "Clinical_Status": "Healthy",
+    "Target_Protein": "DSPP-Alpha",
+    "Primary_Binding_Site": "Asp-124",
+    "Binding_Affinity_kcal_mol": -9.54,
+    "Dissociation_Constant_M": "1.90e-07",
+    "Interaction_Residues": "Asp-124, Ser-128, Lys-142",
+    "Stability_Metric": "STABLE",
+    "Solvation_Energy": -1.43,
+    "Electrostatic_Contribution": -4.29,
+    "Van_der_Waals_Contribution": -3.82
+}

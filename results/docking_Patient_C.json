@@ -1,0 +1,13 @@
+{
+    "Patient_ID": "Patient_C",
+    "Clinical_Status": "BoneLoss",
+    "Target_Protein": "RANKL/OPG Complex",
+    "Primary_Binding_Site": "Gln-188",
+    "Binding_Affinity_kcal_mol": -8.86,
+    "Dissociation_Constant_M": "5.67e-07",
+    "Interaction_Residues": "Gln-188, Arg-190, Phe-192",
+    "Stability_Metric": "STABLE",
+    "Solvation_Energy": -1.33,
+    "Electrostatic_Contribution": -3.99,
+    "Van_der_Waals_Contribution": -3.55
+}
