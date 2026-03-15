@@ -46,7 +46,7 @@ graph TD
 
     Input[("OPG X-Ray Archive\n(n=77,740)")]:::input
 
-    subgraph Tier I: The Radiomic Foundation (Phases 0-3)
+    subgraph Tier_I ["Tier I: The Radiomic Foundation"]
         P0["Phase 0: Generative Augmentation"]:::foundation
         P1["Phase 1: Segmentation Engine"]:::foundation
         P2["Phase 2: Mask Enrichment"]:::foundation
@@ -55,21 +55,21 @@ graph TD
         Input --> P0 --> P1 --> P2 --> P3
     end
 
-    subgraph Tier II: Predictive Modeling (Phases 4-5)
+    subgraph Tier_II ["Tier II: Predictive Modeling"]
         P4["Phase 4: Generative Restoration"]:::prediction
         P5["Phase 5: Biomechanical Prognosis"]:::prediction
         
         P3 --> P4 --> P5
     end
 
-    subgraph Tier III: Molecular Diagnostic (Phases 6-7)
+    subgraph Tier_III ["Tier III: Molecular Diagnostic"]
         P6["Phase 6: The Regenerative Oracle"]:::extraction
         P7["Phase 7: Molecular Diagnostic"]:::extraction
         
         P5 --> P6 --> P7
     end
 
-    subgraph Tier IV: Precision Regeneration (Phases 8-11)
+    subgraph Tier_IV ["Tier IV: Precision Regeneration"]
         P8["Phase 8: Pharmo-Dynamic Matchmaker"]:::precision
         P9["Phase 9: Personalized Synthesis"]:::precision
         P10["Phase 10: Outcome Simulator"]:::precision
