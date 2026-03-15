@@ -123,9 +123,14 @@ OdontoApex/
 
 ---
 
-## 📜 Academic Integrity & Licensing
+## 📜 Academic Integrity & Citation Policy
 
-This project is released under the **MIT License**. It is designed to serve as foundational, open-source intellectual property intended to accelerate high-impact, peer-reviewed research in the intersection of **Artificial Intelligence**, **Precision Dentistry**, and **Regenerative Pharmacology**.
+This project is released under a **Custom Academic Public License**. It is designed to serve as foundational, open-source intellectual property intended to accelerate high-impact, peer-reviewed research in the intersection of **Artificial Intelligence**, **Precision Dentistry**, and **Regenerative Pharmacology**.
 
-**Principal Investigator / Lead Developer**: Umer Tanveer
+**CITATION REQUIREMENT:** Any researcher, institution, or developer utilizing this codebase, methodology, or conceptual framework in their work MUST academically cite this repository and credit the Principal Investigators.
+
+### Principal Investigators & Co-Authors:
+*   **Umer Tanveer** 
+*   **Kiran Falak Sher**
+
 *Advancing the frontiers of deep-tech clinical dentistry.*
