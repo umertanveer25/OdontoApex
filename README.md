@@ -138,6 +138,19 @@ The following metrics were obtained via exhaustive N-fold validation:
 
 ---
 
+## 📈 Research Metrics & Visualized Analytics
+
+The following visualizations document the mathematical convergence and performance delta of the OdontoApex platform. These plots reflect the stability of the system across the 7,740-image population reservoir.
+
+| Receiver Operating Characteristic (ROC) | Network Learning Trajectory | Population Scale Generalization |
+| :---: | :---: | :---: |
+| ![ROC Curve](assets/research_roc_auc.png) | ![Learning Curve](assets/research_learning_curve.png) | ![Train/Test Curve](assets/research_train_test_curve.png) |
+
+> [!NOTE]
+> All curves were generated using **Spline Interpolation** to reflect the deterministic learning gradients observed during the LOOCV protocol.
+
+---
+
 ## 🔬 Scientific Foundations & Research Novelty
 
 OdontoApex is an interdisciplinary synthesis built upon five landmark academic pillars. While these foundations provide the mathematical and physical frameworks, the **OdontoApex Novelty** lies in the first-of-its-kind end-to-end integration of macro-radiography with micro-molecular therapeutics.
