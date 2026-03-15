@@ -3,11 +3,11 @@
     "Clinical_Status": "Restoration",
     "Target_Protein": "MMP-20 (Catalytic)",
     "Primary_Binding_Site": "Zn-201",
-    "Binding_Affinity_kcal_mol": -11.42,
-    "Dissociation_Constant_M": "8.94e-09",
+    "Binding_Affinity_kcal_mol": -11.09,
+    "Dissociation_Constant_M": "1.52e-08",
     "Interaction_Residues": "His-218, Glu-219, Zn-201",
     "Stability_Metric": "STABLE",
-    "Solvation_Energy": -1.71,
-    "Electrostatic_Contribution": -5.14,
-    "Van_der_Waals_Contribution": -4.57
+    "Solvation_Energy": -1.66,
+    "Electrostatic_Contribution": -4.99,
+    "Van_der_Waals_Contribution": -4.44
 }
