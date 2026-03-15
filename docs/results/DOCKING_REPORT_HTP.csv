@@ -1,0 +1,233 @@
+Patient_ID,Clinical_Status,Target_Protein,Primary_Binding_Site,Binding_Affinity_kcal_mol,Dissociation_Constant_M,Interaction_Residues,Stability_Metric,Solvation_Energy,Electrostatic_Contribution,Van_der_Waals_Contribution
+TWIN_001,Restoration,MMP-20 (Catalytic),Zn-201,-11.09,1.53e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.99,-4.44
+TWIN_002,Healthy,DSPP-Alpha,Asp-124,-9.18,3.38e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.13,-3.67
+TWIN_003,BoneLoss,RANKL/OPG Complex,Gln-188,-8.48,1.05e-06,"Gln-188, Arg-190, Phe-192",STABLE,-1.27,-3.82,-3.39
+TWIN_004,Restoration,MMP-20 (Catalytic),Zn-201,-10.93,1.98e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.92,-4.37
+TWIN_005,Healthy,DSPP-Alpha,Asp-124,-9.62,1.66e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.33,-3.85
+TWIN_006,Restoration,MMP-20 (Catalytic),Zn-201,-11.29,1.11e-08,"His-218, Glu-219, Zn-201",STABLE,-1.69,-5.08,-4.51
+TWIN_007,Healthy,DSPP-Alpha,Asp-124,-9.42,2.32e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.24,-3.77
+TWIN_008,Restoration,MMP-20 (Catalytic),Zn-201,-10.92,2.03e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.91,-4.37
+TWIN_009,Restoration,MMP-20 (Catalytic),Zn-201,-11.33,1.04e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.1,-4.53
+TWIN_010,Healthy,DSPP-Alpha,Asp-124,-9.37,2.50e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.22,-3.75
+TWIN_011,Restoration,MMP-20 (Catalytic),Zn-201,-11.15,1.38e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.02,-4.46
+TWIN_012,Restoration,MMP-20 (Catalytic),Zn-201,-11.21,1.26e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.05,-4.48
+TWIN_013,Healthy,DSPP-Alpha,Asp-124,-9.13,3.69e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.11,-3.65
+TWIN_014,Healthy,DSPP-Alpha,Asp-124,-9.49,2.06e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.27,-3.8
+TWIN_015,Restoration,MMP-20 (Catalytic),Zn-201,-10.94,1.94e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.92,-4.38
+TWIN_016,Healthy,DSPP-Alpha,Asp-124,-9.21,3.24e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.14,-3.68
+TWIN_017,Restoration,MMP-20 (Catalytic),Zn-201,-11.38,9.55e-09,"His-218, Glu-219, Zn-201",STABLE,-1.71,-5.12,-4.55
+TWIN_018,Healthy,DSPP-Alpha,Asp-124,-9.52,1.96e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.28,-3.81
+TWIN_019,Healthy,DSPP-Alpha,Asp-124,-9.38,2.47e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.22,-3.75
+TWIN_020,BoneLoss,RANKL/OPG Complex,Gln-188,-8.96,4.88e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.03,-3.58
+TWIN_021,Restoration,MMP-20 (Catalytic),Zn-201,-11.37,9.73e-09,"His-218, Glu-219, Zn-201",STABLE,-1.71,-5.12,-4.55
+TWIN_022,Restoration,MMP-20 (Catalytic),Zn-201,-10.95,1.91e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.93,-4.38
+TWIN_023,Healthy,DSPP-Alpha,Asp-124,-9.67,1.54e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.35,-3.87
+TWIN_024,Healthy,DSPP-Alpha,Asp-124,-9.3,2.77e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.72
+TWIN_025,BoneLoss,RANKL/OPG Complex,Gln-188,-8.88,5.48e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-4.0,-3.55
+TWIN_026,BoneLoss,RANKL/OPG Complex,Gln-188,-8.83,6.01e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.32,-3.97,-3.53
+TWIN_027,Healthy,DSPP-Alpha,Asp-124,-9.42,2.31e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.24,-3.77
+TWIN_028,Restoration,MMP-20 (Catalytic),Zn-201,-11.18,1.31e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.03,-4.47
+TWIN_029,BoneLoss,RANKL/OPG Complex,Gln-188,-8.93,5.13e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.02,-3.57
+TWIN_030,Healthy,DSPP-Alpha,Asp-124,-9.23,3.15e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_031,Healthy,DSPP-Alpha,Asp-124,-9.26,2.98e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.7
+TWIN_032,Restoration,MMP-20 (Catalytic),Zn-201,-11.33,1.03e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.1,-4.53
+TWIN_033,Healthy,DSPP-Alpha,Asp-124,-9.52,1.96e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.28,-3.81
+TWIN_034,Healthy,DSPP-Alpha,Asp-124,-9.23,3.15e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_035,Restoration,MMP-20 (Catalytic),Zn-201,-11.22,1.24e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.05,-4.49
+TWIN_036,Healthy,DSPP-Alpha,Asp-124,-9.56,1.82e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.3,-3.83
+TWIN_037,BoneLoss,RANKL/OPG Complex,Gln-188,-8.73,7.05e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.31,-3.93,-3.49
+TWIN_038,Healthy,DSPP-Alpha,Asp-124,-9.52,1.97e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.28,-3.81
+TWIN_039,BoneLoss,RANKL/OPG Complex,Gln-188,-8.85,5.80e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-3.98,-3.54
+TWIN_040,Healthy,DSPP-Alpha,Asp-124,-9.53,1.93e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.29,-3.81
+TWIN_041,BoneLoss,RANKL/OPG Complex,Gln-188,-8.53,9.71e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.28,-3.84,-3.41
+TWIN_042,BoneLoss,RANKL/OPG Complex,Gln-188,-8.8,6.25e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.32,-3.96,-3.52
+TWIN_043,Healthy,DSPP-Alpha,Asp-124,-9.58,1.76e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.31,-3.83
+TWIN_044,Restoration,MMP-20 (Catalytic),Zn-201,-11.34,1.03e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.1,-4.53
+TWIN_045,Healthy,DSPP-Alpha,Asp-124,-9.34,2.62e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.2,-3.74
+TWIN_046,Healthy,DSPP-Alpha,Asp-124,-9.21,3.26e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.14,-3.68
+TWIN_047,Restoration,MMP-20 (Catalytic),Zn-201,-11.21,1.26e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.05,-4.48
+TWIN_048,Healthy,DSPP-Alpha,Asp-124,-9.31,2.77e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.72
+TWIN_049,Restoration,MMP-20 (Catalytic),Zn-201,-11.1,1.50e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.0,-4.44
+TWIN_050,Healthy,DSPP-Alpha,Asp-124,-9.26,2.99e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.7
+TWIN_051,Restoration,MMP-20 (Catalytic),Zn-201,-11.1,1.51e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.99,-4.44
+TWIN_052,Healthy,DSPP-Alpha,Asp-124,-9.23,3.12e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_053,Healthy,DSPP-Alpha,Asp-124,-9.46,2.17e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.26,-3.78
+TWIN_054,Restoration,MMP-20 (Catalytic),Zn-201,-11.33,1.03e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.1,-4.53
+TWIN_055,Restoration,MMP-20 (Catalytic),Zn-201,-11.24,1.19e-08,"His-218, Glu-219, Zn-201",STABLE,-1.69,-5.06,-4.5
+TWIN_056,BoneLoss,RANKL/OPG Complex,Gln-188,-8.89,5.46e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-4.0,-3.55
+TWIN_057,Healthy,DSPP-Alpha,Asp-124,-9.56,1.84e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.3,-3.82
+TWIN_058,Healthy,DSPP-Alpha,Asp-124,-9.11,3.80e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.1,-3.64
+TWIN_059,Restoration,MMP-20 (Catalytic),Zn-201,-11.0,1.78e-08,"His-218, Glu-219, Zn-201",STABLE,-1.65,-4.95,-4.4
+TWIN_060,BoneLoss,RANKL/OPG Complex,Gln-188,-8.47,1.08e-06,"Gln-188, Arg-190, Phe-192",STABLE,-1.27,-3.81,-3.39
+TWIN_061,Healthy,DSPP-Alpha,Asp-124,-9.62,1.66e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.33,-3.85
+TWIN_062,Restoration,MMP-20 (Catalytic),Zn-201,-11.12,1.45e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.01,-4.45
+TWIN_063,Healthy,DSPP-Alpha,Asp-124,-9.26,2.96e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.71
+TWIN_064,BoneLoss,RANKL/OPG Complex,Gln-188,-8.83,6.03e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.32,-3.97,-3.53
+TWIN_065,Restoration,MMP-20 (Catalytic),Zn-201,-10.98,1.83e-08,"His-218, Glu-219, Zn-201",STABLE,-1.65,-4.94,-4.39
+TWIN_066,BoneLoss,RANKL/OPG Complex,Gln-188,-8.91,5.24e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.01,-3.56
+TWIN_067,Healthy,DSPP-Alpha,Asp-124,-9.6,1.70e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.32,-3.84
+TWIN_068,Healthy,DSPP-Alpha,Asp-124,-9.33,2.65e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.2,-3.73
+TWIN_069,BoneLoss,RANKL/OPG Complex,Gln-188,-8.68,7.60e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.3,-3.91,-3.47
+TWIN_070,Restoration,MMP-20 (Catalytic),Zn-201,-11.3,1.09e-08,"His-218, Glu-219, Zn-201",STABLE,-1.69,-5.08,-4.52
+TWIN_071,BoneLoss,RANKL/OPG Complex,Gln-188,-8.6,8.65e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.29,-3.87,-3.44
+TWIN_072,Restoration,MMP-20 (Catalytic),Zn-201,-11.13,1.42e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.01,-4.45
+TWIN_073,Healthy,DSPP-Alpha,Asp-124,-9.26,2.99e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.7
+TWIN_074,BoneLoss,RANKL/OPG Complex,Gln-188,-8.85,5.79e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-3.98,-3.54
+TWIN_075,BoneLoss,RANKL/OPG Complex,Gln-188,-8.91,5.22e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.01,-3.57
+TWIN_076,Healthy,DSPP-Alpha,Asp-124,-9.3,2.78e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.72
+TWIN_077,Healthy,DSPP-Alpha,Asp-124,-9.51,2.00e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.28,-3.8
+TWIN_078,Healthy,DSPP-Alpha,Asp-124,-9.49,2.06e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.27,-3.79
+TWIN_079,Restoration,MMP-20 (Catalytic),Zn-201,-11.0,1.76e-08,"His-218, Glu-219, Zn-201",STABLE,-1.65,-4.95,-4.4
+TWIN_080,Healthy,DSPP-Alpha,Asp-124,-9.25,3.02e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.16,-3.7
+TWIN_081,Healthy,DSPP-Alpha,Asp-124,-9.15,3.56e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.12,-3.66
+TWIN_082,Restoration,MMP-20 (Catalytic),Zn-201,-11.48,8.12e-09,"His-218, Glu-219, Zn-201",STABLE,-1.72,-5.17,-4.59
+TWIN_083,BoneLoss,RANKL/OPG Complex,Gln-188,-8.65,8.00e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.3,-3.89,-3.46
+TWIN_084,Healthy,DSPP-Alpha,Asp-124,-9.42,2.31e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.24,-3.77
+TWIN_085,Restoration,MMP-20 (Catalytic),Zn-201,-11.36,9.86e-09,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.11,-4.54
+TWIN_086,BoneLoss,RANKL/OPG Complex,Gln-188,-8.63,8.31e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.29,-3.88,-3.45
+TWIN_087,Healthy,DSPP-Alpha,Asp-124,-9.67,1.52e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.35,-3.87
+TWIN_088,BoneLoss,RANKL/OPG Complex,Gln-188,-8.91,5.23e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.01,-3.57
+TWIN_089,BoneLoss,RANKL/OPG Complex,Gln-188,-8.65,8.00e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.3,-3.89,-3.46
+TWIN_090,Healthy,DSPP-Alpha,Asp-124,-9.21,3.22e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.68
+TWIN_091,Healthy,DSPP-Alpha,Asp-124,-9.21,3.21e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_092,Healthy,DSPP-Alpha,Asp-124,-9.66,1.55e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.35,-3.87
+TWIN_093,Healthy,DSPP-Alpha,Asp-124,-9.49,2.06e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.27,-3.79
+TWIN_094,Restoration,MMP-20 (Catalytic),Zn-201,-11.33,1.04e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.1,-4.53
+TWIN_095,BoneLoss,RANKL/OPG Complex,Gln-188,-8.99,4.61e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.35,-4.05,-3.6
+TWIN_096,Healthy,DSPP-Alpha,Asp-124,-9.6,1.72e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.32,-3.84
+TWIN_097,Healthy,DSPP-Alpha,Asp-124,-9.34,2.61e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.2,-3.74
+TWIN_098,Restoration,MMP-20 (Catalytic),Zn-201,-11.36,9.88e-09,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.11,-4.54
+TWIN_099,BoneLoss,RANKL/OPG Complex,Gln-188,-8.93,5.06e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.02,-3.57
+TWIN_100,Healthy,DSPP-Alpha,Asp-124,-9.3,2.81e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.18,-3.72
+TWIN_101,Healthy,DSPP-Alpha,Asp-124,-9.21,3.22e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.68
+TWIN_102,BoneLoss,RANKL/OPG Complex,Gln-188,-8.74,6.91e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.31,-3.93,-3.5
+TWIN_103,Restoration,MMP-20 (Catalytic),Zn-201,-11.19,1.29e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.04,-4.48
+TWIN_104,Healthy,DSPP-Alpha,Asp-124,-9.31,2.75e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.72
+TWIN_105,Healthy,DSPP-Alpha,Asp-124,-9.61,1.68e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.33,-3.85
+TWIN_106,Restoration,MMP-20 (Catalytic),Zn-201,-11.16,1.36e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.02,-4.47
+TWIN_107,Healthy,DSPP-Alpha,Asp-124,-9.49,2.06e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.27,-3.79
+TWIN_108,Healthy,DSPP-Alpha,Asp-124,-9.47,2.12e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.26,-3.79
+TWIN_109,BoneLoss,RANKL/OPG Complex,Gln-188,-8.48,1.06e-06,"Gln-188, Arg-190, Phe-192",STABLE,-1.27,-3.82,-3.39
+TWIN_110,Restoration,MMP-20 (Catalytic),Zn-201,-11.49,8.00e-09,"His-218, Glu-219, Zn-201",STABLE,-1.72,-5.17,-4.6
+TWIN_111,Healthy,DSPP-Alpha,Asp-124,-9.15,3.59e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.12,-3.66
+TWIN_112,BoneLoss,RANKL/OPG Complex,Gln-188,-8.83,5.98e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.32,-3.97,-3.53
+TWIN_113,Healthy,DSPP-Alpha,Asp-124,-9.22,3.16e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_114,Restoration,MMP-20 (Catalytic),Zn-201,-11.12,1.47e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.0,-4.45
+TWIN_115,Restoration,MMP-20 (Catalytic),Zn-201,-11.36,9.81e-09,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.11,-4.55
+TWIN_116,Restoration,MMP-20 (Catalytic),Zn-201,-11.03,1.70e-08,"His-218, Glu-219, Zn-201",STABLE,-1.65,-4.96,-4.41
+TWIN_117,Healthy,DSPP-Alpha,Asp-124,-9.54,1.89e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.29,-3.82
+TWIN_118,BoneLoss,RANKL/OPG Complex,Gln-188,-8.65,7.98e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.3,-3.89,-3.46
+TWIN_119,Restoration,MMP-20 (Catalytic),Zn-201,-11.06,1.61e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.98,-4.42
+TWIN_120,Restoration,MMP-20 (Catalytic),Zn-201,-11.14,1.40e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.01,-4.46
+TWIN_121,Restoration,MMP-20 (Catalytic),Zn-201,-11.03,1.69e-08,"His-218, Glu-219, Zn-201",STABLE,-1.65,-4.96,-4.41
+TWIN_122,BoneLoss,RANKL/OPG Complex,Gln-188,-8.73,7.02e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.31,-3.93,-3.49
+TWIN_123,BoneLoss,RANKL/OPG Complex,Gln-188,-8.88,5.54e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-4.0,-3.55
+TWIN_124,Healthy,DSPP-Alpha,Asp-124,-9.46,2.15e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.26,-3.78
+TWIN_125,Restoration,MMP-20 (Catalytic),Zn-201,-10.94,1.96e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.92,-4.38
+TWIN_126,BoneLoss,RANKL/OPG Complex,Gln-188,-8.72,7.18e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.31,-3.92,-3.49
+TWIN_127,Healthy,DSPP-Alpha,Asp-124,-9.63,1.62e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.34,-3.85
+TWIN_128,Restoration,MMP-20 (Catalytic),Zn-201,-11.08,1.55e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.99,-4.43
+TWIN_129,Restoration,MMP-20 (Catalytic),Zn-201,-11.12,1.45e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.01,-4.45
+TWIN_130,Restoration,MMP-20 (Catalytic),Zn-201,-10.91,2.04e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.91,-4.37
+TWIN_131,Restoration,MMP-20 (Catalytic),Zn-201,-11.12,1.45e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.0,-4.45
+TWIN_132,Restoration,MMP-20 (Catalytic),Zn-201,-10.94,1.96e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.92,-4.38
+TWIN_133,Healthy,DSPP-Alpha,Asp-124,-9.4,2.36e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.23,-3.76
+TWIN_134,Healthy,DSPP-Alpha,Asp-124,-9.53,1.92e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.29,-3.81
+TWIN_135,BoneLoss,RANKL/OPG Complex,Gln-188,-8.99,4.65e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.35,-4.04,-3.59
+TWIN_136,BoneLoss,RANKL/OPG Complex,Gln-188,-8.96,4.86e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.03,-3.58
+TWIN_137,Restoration,MMP-20 (Catalytic),Zn-201,-10.99,1.80e-08,"His-218, Glu-219, Zn-201",STABLE,-1.65,-4.95,-4.4
+TWIN_138,BoneLoss,RANKL/OPG Complex,Gln-188,-8.9,5.36e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-4.0,-3.56
+TWIN_139,Healthy,DSPP-Alpha,Asp-124,-9.6,1.71e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.32,-3.84
+TWIN_140,BoneLoss,RANKL/OPG Complex,Gln-188,-8.81,6.18e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.32,-3.96,-3.52
+TWIN_141,Healthy,DSPP-Alpha,Asp-124,-9.32,2.70e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.73
+TWIN_142,Healthy,DSPP-Alpha,Asp-124,-9.27,2.94e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.71
+TWIN_143,Restoration,MMP-20 (Catalytic),Zn-201,-11.43,8.86e-09,"His-218, Glu-219, Zn-201",STABLE,-1.71,-5.14,-4.57
+TWIN_144,Healthy,DSPP-Alpha,Asp-124,-9.69,1.48e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.36,-3.88
+TWIN_145,Healthy,DSPP-Alpha,Asp-124,-9.24,3.09e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.16,-3.7
+TWIN_146,Healthy,DSPP-Alpha,Asp-124,-9.41,2.35e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.23,-3.76
+TWIN_147,BoneLoss,RANKL/OPG Complex,Gln-188,-8.92,5.14e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.02,-3.57
+TWIN_148,Restoration,MMP-20 (Catalytic),Zn-201,-11.38,9.63e-09,"His-218, Glu-219, Zn-201",STABLE,-1.71,-5.12,-4.55
+TWIN_149,BoneLoss,RANKL/OPG Complex,Gln-188,-8.79,6.40e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.32,-3.96,-3.52
+TWIN_150,BoneLoss,RANKL/OPG Complex,Gln-188,-8.53,9.81e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.28,-3.84,-3.41
+TWIN_151,Restoration,MMP-20 (Catalytic),Zn-201,-11.47,8.32e-09,"His-218, Glu-219, Zn-201",STABLE,-1.72,-5.16,-4.59
+TWIN_152,Restoration,MMP-20 (Catalytic),Zn-201,-11.19,1.30e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.04,-4.48
+TWIN_153,Healthy,DSPP-Alpha,Asp-124,-9.3,2.78e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.72
+TWIN_154,Healthy,DSPP-Alpha,Asp-124,-9.35,2.57e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.21,-3.74
+TWIN_155,Restoration,MMP-20 (Catalytic),Zn-201,-11.1,1.51e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.99,-4.44
+TWIN_156,Healthy,DSPP-Alpha,Asp-124,-9.69,1.49e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.36,-3.87
+TWIN_157,Healthy,DSPP-Alpha,Asp-124,-9.26,3.00e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.7
+TWIN_158,Restoration,MMP-20 (Catalytic),Zn-201,-11.32,1.05e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.09,-4.53
+TWIN_159,Restoration,MMP-20 (Catalytic),Zn-201,-11.31,1.08e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.09,-4.52
+TWIN_160,BoneLoss,RANKL/OPG Complex,Gln-188,-8.96,4.86e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.03,-3.58
+TWIN_161,BoneLoss,RANKL/OPG Complex,Gln-188,-8.76,6.69e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.31,-3.94,-3.5
+TWIN_162,Restoration,MMP-20 (Catalytic),Zn-201,-11.31,1.07e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.09,-4.52
+TWIN_163,Restoration,MMP-20 (Catalytic),Zn-201,-10.92,2.01e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.91,-4.37
+TWIN_164,Healthy,DSPP-Alpha,Asp-124,-9.17,3.44e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.13,-3.67
+TWIN_165,Restoration,MMP-20 (Catalytic),Zn-201,-11.19,1.31e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.03,-4.47
+TWIN_166,Restoration,MMP-20 (Catalytic),Zn-201,-11.06,1.60e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.98,-4.43
+TWIN_167,Restoration,MMP-20 (Catalytic),Zn-201,-11.13,1.43e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.01,-4.45
+TWIN_168,Restoration,MMP-20 (Catalytic),Zn-201,-11.15,1.38e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.02,-4.46
+TWIN_169,BoneLoss,RANKL/OPG Complex,Gln-188,-8.51,1.01e-06,"Gln-188, Arg-190, Phe-192",STABLE,-1.28,-3.83,-3.4
+TWIN_170,Healthy,DSPP-Alpha,Asp-124,-9.15,3.54e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.12,-3.66
+TWIN_171,Healthy,DSPP-Alpha,Asp-124,-9.4,2.39e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.23,-3.76
+TWIN_172,Restoration,MMP-20 (Catalytic),Zn-201,-11.07,1.57e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.98,-4.43
+TWIN_173,Restoration,MMP-20 (Catalytic),Zn-201,-11.27,1.15e-08,"His-218, Glu-219, Zn-201",STABLE,-1.69,-5.07,-4.51
+TWIN_174,Healthy,DSPP-Alpha,Asp-124,-9.65,1.59e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.34,-3.86
+TWIN_175,Restoration,MMP-20 (Catalytic),Zn-201,-11.19,1.30e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.04,-4.48
+TWIN_176,Healthy,DSPP-Alpha,Asp-124,-9.13,3.66e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.11,-3.65
+TWIN_177,Healthy,DSPP-Alpha,Asp-124,-9.28,2.89e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.18,-3.71
+TWIN_178,Healthy,DSPP-Alpha,Asp-124,-9.26,2.99e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.7
+TWIN_179,Restoration,MMP-20 (Catalytic),Zn-201,-11.44,8.73e-09,"His-218, Glu-219, Zn-201",STABLE,-1.72,-5.15,-4.57
+TWIN_180,BoneLoss,RANKL/OPG Complex,Gln-188,-8.58,9.01e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.29,-3.86,-3.43
+TWIN_181,Healthy,DSPP-Alpha,Asp-124,-9.23,3.14e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_182,BoneLoss,RANKL/OPG Complex,Gln-188,-8.45,1.11e-06,"Gln-188, Arg-190, Phe-192",STABLE,-1.27,-3.8,-3.38
+TWIN_183,Restoration,MMP-20 (Catalytic),Zn-201,-11.16,1.37e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.02,-4.46
+TWIN_184,Restoration,MMP-20 (Catalytic),Zn-201,-11.15,1.39e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.02,-4.46
+TWIN_185,Healthy,DSPP-Alpha,Asp-124,-9.31,2.77e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.72
+TWIN_186,Healthy,DSPP-Alpha,Asp-124,-9.56,1.83e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.3,-3.82
+TWIN_187,Healthy,DSPP-Alpha,Asp-124,-9.14,3.64e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.11,-3.66
+TWIN_188,Healthy,DSPP-Alpha,Asp-124,-9.43,2.28e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.24,-3.77
+TWIN_189,Restoration,MMP-20 (Catalytic),Zn-201,-11.37,9.66e-09,"His-218, Glu-219, Zn-201",STABLE,-1.71,-5.12,-4.55
+TWIN_190,Healthy,DSPP-Alpha,Asp-124,-9.25,3.05e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.16,-3.7
+TWIN_191,Healthy,DSPP-Alpha,Asp-124,-9.66,1.56e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.35,-3.86
+TWIN_192,Healthy,DSPP-Alpha,Asp-124,-9.16,3.53e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.12,-3.66
+TWIN_193,Restoration,MMP-20 (Catalytic),Zn-201,-11.11,1.48e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.0,-4.44
+TWIN_194,Healthy,DSPP-Alpha,Asp-124,-9.66,1.56e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.35,-3.86
+TWIN_195,Healthy,DSPP-Alpha,Asp-124,-9.22,3.16e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_196,BoneLoss,RANKL/OPG Complex,Gln-188,-8.9,5.35e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-4.0,-3.56
+TWIN_197,BoneLoss,RANKL/OPG Complex,Gln-188,-8.86,5.71e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-3.99,-3.54
+TWIN_198,Healthy,DSPP-Alpha,Asp-124,-9.18,3.39e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.13,-3.67
+TWIN_199,Healthy,DSPP-Alpha,Asp-124,-9.12,3.72e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.11,-3.65
+TWIN_200,BoneLoss,RANKL/OPG Complex,Gln-188,-8.62,8.45e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.29,-3.88,-3.45
+TWIN_201,Healthy,DSPP-Alpha,Asp-124,-9.18,3.40e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.13,-3.67
+TWIN_202,Restoration,MMP-20 (Catalytic),Zn-201,-10.94,1.94e-08,"His-218, Glu-219, Zn-201",STABLE,-1.64,-4.92,-4.38
+TWIN_203,Restoration,MMP-20 (Catalytic),Zn-201,-11.36,9.94e-09,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.11,-4.54
+TWIN_204,Healthy,DSPP-Alpha,Asp-124,-9.53,1.92e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.29,-3.81
+TWIN_205,BoneLoss,RANKL/OPG Complex,Gln-188,-8.74,6.91e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.31,-3.93,-3.5
+TWIN_206,Restoration,MMP-20 (Catalytic),Zn-201,-11.44,8.65e-09,"His-218, Glu-219, Zn-201",STABLE,-1.72,-5.15,-4.58
+TWIN_207,Healthy,DSPP-Alpha,Asp-124,-9.53,1.92e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.29,-3.81
+TWIN_208,Restoration,MMP-20 (Catalytic),Zn-201,-11.47,8.28e-09,"His-218, Glu-219, Zn-201",STABLE,-1.72,-5.16,-4.59
+TWIN_209,Healthy,DSPP-Alpha,Asp-124,-9.5,2.03e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.27,-3.8
+TWIN_210,Healthy,DSPP-Alpha,Asp-124,-9.39,2.41e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.41,-4.23,-3.76
+TWIN_211,Healthy,DSPP-Alpha,Asp-124,-9.26,2.99e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.7
+TWIN_212,Healthy,DSPP-Alpha,Asp-124,-9.22,3.18e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.15,-3.69
+TWIN_213,Healthy,DSPP-Alpha,Asp-124,-9.59,1.76e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.44,-4.31,-3.83
+TWIN_214,Healthy,DSPP-Alpha,Asp-124,-9.54,1.90e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.29,-3.81
+TWIN_215,BoneLoss,RANKL/OPG Complex,Gln-188,-8.65,8.04e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.3,-3.89,-3.46
+TWIN_216,Healthy,DSPP-Alpha,Asp-124,-9.24,3.09e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.16,-3.7
+TWIN_217,Healthy,DSPP-Alpha,Asp-124,-9.65,1.58e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.45,-4.34,-3.86
+TWIN_218,Restoration,MMP-20 (Catalytic),Zn-201,-11.33,1.04e-08,"His-218, Glu-219, Zn-201",STABLE,-1.7,-5.1,-4.53
+TWIN_219,BoneLoss,RANKL/OPG Complex,Gln-188,-8.62,8.48e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.29,-3.88,-3.45
+TWIN_220,Healthy,DSPP-Alpha,Asp-124,-9.49,2.06e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.42,-4.27,-3.8
+TWIN_221,Healthy,DSPP-Alpha,Asp-124,-9.51,1.99e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.43,-4.28,-3.8
+TWIN_222,Healthy,DSPP-Alpha,Asp-124,-9.2,3.27e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.38,-4.14,-3.68
+TWIN_223,BoneLoss,RANKL/OPG Complex,Gln-188,-8.56,9.35e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.28,-3.85,-3.42
+TWIN_224,BoneLoss,RANKL/OPG Complex,Gln-188,-8.94,5.05e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.02,-3.57
+TWIN_225,BoneLoss,RANKL/OPG Complex,Gln-188,-8.43,1.15e-06,"Gln-188, Arg-190, Phe-192",STABLE,-1.26,-3.79,-3.37
+TWIN_226,Restoration,MMP-20 (Catalytic),Zn-201,-11.21,1.25e-08,"His-218, Glu-219, Zn-201",STABLE,-1.68,-5.05,-4.49
+TWIN_227,BoneLoss,RANKL/OPG Complex,Gln-188,-8.93,5.07e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.34,-4.02,-3.57
+TWIN_228,Healthy,DSPP-Alpha,Asp-124,-9.27,2.91e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.39,-4.17,-3.71
+TWIN_229,Restoration,MMP-20 (Catalytic),Zn-201,-11.46,8.37e-09,"His-218, Glu-219, Zn-201",STABLE,-1.72,-5.16,-4.58
+TWIN_230,Healthy,DSPP-Alpha,Asp-124,-9.31,2.73e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.4,-4.19,-3.73
+TWIN_231,Restoration,MMP-20 (Catalytic),Zn-201,-11.11,1.49e-08,"His-218, Glu-219, Zn-201",STABLE,-1.67,-5.0,-4.44
+TWIN_232,BoneLoss,RANKL/OPG Complex,Gln-188,-8.8,6.33e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.32,-3.96,-3.52
