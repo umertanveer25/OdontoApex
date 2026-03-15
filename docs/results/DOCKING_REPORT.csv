@@ -1,4 +1,0 @@
-Patient_ID,Clinical_Status,Target_Protein,Primary_Binding_Site,Binding_Affinity_kcal_mol,Dissociation_Constant_M,Interaction_Residues,Stability_Metric,Solvation_Energy,Electrostatic_Contribution,Van_der_Waals_Contribution
-Patient_A,Healthy,DSPP-Alpha,Asp-124,-9.13,3.71e-07,"Asp-124, Ser-128, Lys-142",STABLE,-1.37,-4.11,-3.65
-Patient_B,Restoration,MMP-20 (Catalytic),Zn-201,-11.09,1.52e-08,"His-218, Glu-219, Zn-201",STABLE,-1.66,-4.99,-4.44
-Patient_C,BoneLoss,RANKL/OPG Complex,Gln-188,-8.87,5.58e-07,"Gln-188, Arg-190, Phe-192",STABLE,-1.33,-3.99,-3.55

@@ -1,5 +1,0 @@
-Test,Statistic,P-Value,Significance
-T-Test (Healthy vs Restoration),407.65621853903053,0.0,p < 0.05
-T-Test (Healthy vs BoneLoss),-128.71817834774544,0.0,p < 0.05
-T-Test (Restoration vs BoneLoss),-464.14388412994117,0.0,p < 0.05
-Z-Test (Population vs Baseline),-420.5920976828792,0.0,p < 0.05
